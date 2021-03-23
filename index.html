@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="wrapper__title">Footstep energy generation</h1>
+        <form class="calculator">
+            <div class="calculator__row">
+                <label for="bill"> Enter Voltage per unit Force of sensor (V/N)</label>
+                <input type="text" id="bill" class="calculator__bill" value="5" required />
+            </div>
+            <div class="calculator__row">
+                <label for="tip">Force applied: <span class="tip-amount"></span></label>
+                <input type="range" min="0" max="100" value="0" step="1" class="calculator__tip" id="tip" required />
+            </div>
+            <div class="calculator__row">
+                <h2 class="calculator__info">Sensor output: <span class="calculator__result"></span></h2>
+            </div>
+            <h4>(Sensor Output = (Voltage/unit Force)*g*Weight(kg)*0.001)</h4>
+        </form>
+    </div>
+</body>
+
+</html>
