@@ -38,10 +38,11 @@ $(function () {
         }
 
         tipAmount.text(calculatorTip.val() + ' N');
-        percent = calculatorTip.val() * 1.25;
+        percent = calculatorTip.val() * 12.5;
         result = amount * 9.8 * 0.001 * percent;
         calculatorResult.text(result.toFixed(2) + ' J/step');
 
     });
+
 
 });

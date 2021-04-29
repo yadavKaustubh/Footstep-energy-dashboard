@@ -18,11 +18,11 @@
         <form class="calculator">
             <div class="calculator__row">
                 <label for="bill"> Enter Voltage per unit Force of sensor (V/N)</label>
-                <input type="text" id="bill" class="calculator__bill" value="5" required />
+                <input type="text" id="bill" class="calculator__bill" value="0.25" required />
             </div>
             <div class="calculator__row">
                 <label for="tip">Force applied: <span class="tip-amount"></span></label>
-                <input type="range" min="0" max="100" value="0" step="1" class="calculator__tip" id="tip" required />
+                <input type="range" min="0" max="1000" value="0" step="10" class="calculator__tip" id="tip" required />
             </div>
             <div class="calculator__row">
                 <h2 class="calculator__info">Sensor output: <span class="calculator__result"></span></h2>
