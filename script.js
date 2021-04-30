@@ -45,7 +45,7 @@ $(function () {
         result = amount * 9.8 * 0.001 * percent;
         calStep = stepCal.val();
         stepResult.text((calStep * result).toFixed(2) + ' W');
-        calculatorResult.text(result.toFixed(2) + ' J/step');
+        calculatorResult.text(result.toFixed(2) + ' V/step');
 
     });
 
