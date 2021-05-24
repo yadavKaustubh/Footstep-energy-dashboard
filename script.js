@@ -41,8 +41,8 @@ $(function () {
         }
 
         tipAmount.text(calculatorTip.val() + ' N');
-        percent = calculatorTip.val() * 12.5;
-        result = amount * 9.8 * 0.001 * percent;
+        percent = calculatorTip.val();
+        result = amount * 9.8 * 0.01 * percent;
         calStep = stepCal.val();
         stepResult.text((calStep * result).toFixed(2) + ' W');
         calculatorResult.text(result.toFixed(2) + ' V/step');
