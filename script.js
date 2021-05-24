@@ -37,15 +37,15 @@ $(function () {
         if (calculatorBill.val() === '' || isNaN(calculatorBill.val())) {
             alert('Enter correct value please!')
         } else {
-            amount = calculatorBill.val() * 1;
+            amount = calculatorBill.val() * 0.1;
         }
 
         tipAmount.text(calculatorTip.val() + ' N');
         percent = calculatorTip.val();
-        result = amount * 9.8 * 0.01 * percent;
+        result = amount * 9.8 * 0.1 * percent;
         calStep = stepCal.val();
-        stepResult.text((calStep * result).toFixed(2) + ' W');
-        calculatorResult.text(result.toFixed(2) + ' V/step');
+        stepResult.text((calStep * result).toFixed(4) + ' W');
+        calculatorResult.text(result.toFixed(4) + ' W');
 
     });
 
